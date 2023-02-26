@@ -47,7 +47,8 @@ I scanned Dockerfiles of my Cruddur App for vulnabilities using Synk.io and it r
 ![Vulnerabilities](/assets/vun.png)
 ![Vulnerabilities](/assets/vun-rec.png)
 
-After some personal research, I found it was ok to keep running my frontend docker container on the current version of NodeJS
+I was able to reduce the vulnerability of my frontend Dockerfile by updating it to the lastest version
+![reduced vulnerability](/assets/fixed-vun.jpg)
 
 more imformation about how to use SYNK can be found at this [link](https://docs.snyk.io/)
 
