@@ -74,3 +74,10 @@ then I created a Route in my backend app.py file and also a mock response
 ![openAPI](/assets/notification-api2.png)
 
 
+### React Page for Notifications
+implentend the notification feature on my app frontend
+
+![frontend](/assets/react-notif.png)
+
+![frontend](/assets/frontend-notification.jpg)
+
