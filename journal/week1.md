@@ -41,5 +41,15 @@ I confirmed that my containers are running and that the ports are open
 
 ![full application](/assets/application.png)
 
+### Container Security and Best Practices
+I was able learn what Synk open-source security for docker is.
+I scanned Dockerfiles of my Cruddur App for vulnabilities using Synk.io and it returned out I had vulnerabilities in my frontend dockerfile due to the fact that it doesn't run on the most updated version of NodeJS
+![Vulnerabilities](/assets/vun.png)
+![Vulnerabilities](/assets/vun-rec.png)
+
+After some personal research, I found it was ok to keep running my frontend docker container on the current version of NodeJS
+
+more imformation about how to use SYNK can be found at this [link](https://docs.snyk.io/)
+
 
 
