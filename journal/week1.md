@@ -81,3 +81,16 @@ implentend the notification feature on my app frontend
 
 ![frontend](/assets/frontend-notification.jpg)
 
+### Run Postgres Container
+
+I wrote added command to create Postgres and DynamoDB local in my docker compose file
+
+![docker copose file](/assets/dynamo-dockercompose.jpg)
+
+I then write a script in my gitpod yaml file to install Postgres on Gitpod start up
+
+![docker copose file](/assets/postgres-install.jpg)
+
+i installed a postgres extension, created containers from my docker compose file and connected to postgres container 
+
+![docker copose file](/assets/postgres-connected.jpg)
