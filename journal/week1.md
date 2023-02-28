@@ -7,8 +7,8 @@ I went over all the required videos on youtube
 ### Debugging
 I learnt how to debug my error adequately before asking for help
 
-- I learnt how to read and understand HTTP Response Status code [Study link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) 
-- Though I am not experienced with python I also went over an article about Python Break points is.
+- I learnt how to read and understand HTTP Response Status codes [Study link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) 
+- Though I am not experienced with python but I went over an article about Python Break points.
 
 Python breakpoint() is a new built-in function introduced in Python. Python code debugging has always been a painful process because of the tight coupling between the actual code and the debugging module code.
  Its helpful to use in debugging so that you can easily hook other third-party debuggers on the fly. It also provides an easy option to disable the debugger and runs the program normally.
@@ -17,16 +17,16 @@ Python breakpoint() is a new built-in function introduced in Python. Python code
  - I also learnt how to ask for help while providing adequate information
 
 ### Running Cruddur App on a Container
-I wrote a dockerfile for my backend python application
+I wrote a dockerfile for my backend python application folder
 
 ![backend dockerfile](/assets/backend_dockerfile.jpg)
 
-I move to my frontend app
+I moved to my frontend application folder
 i run the the installation command to install all dependencies on the react app
 
 ``` npm install ```
 
-I then wrote a dockerfile for my frontend react app
+I then wrote a dockerfile for my frontend react application
 
 ![frontend dockerfile](/assets/frontend_dockerfile.jpg)
 
@@ -48,7 +48,7 @@ I confirmed that my containers are running and that the ports are open
 
 ### Container Security and Best Practices
 I was able learn what Synk open-source security for docker is.
-I scanned Dockerfiles of my Cruddur App for vulnabilities using Synk.io and it returned out I had vulnerabilities in my frontend dockerfile due to the fact that it doesn't run on the most updated version of NodeJS
+I scanned Dockerfiles of my Cruddur App for vulnabilities using Synk.io and it turned out I had vulnerabilities in my frontend dockerfile due to the fact that it doesn't run on the most updated version of NodeJS
 
 ![Vulnerabilities](/assets/vun.png)
 
@@ -61,13 +61,12 @@ I was able to reduce the vulnerability of my frontend Dockerfile by updating it 
 more imformation about how to use SYNK can be found at this [link](https://docs.snyk.io/)
 
 ### Write a Flask Backend Endpoint for Notifications
-I was able to implement notifivation functionality on my Cruddur 
-I 
-created a new GET path in my OpenAPI yaml file
+I was able to implement notification functionality on my Cruddur app
+I  created a new GET path in my OpenAPI yaml file
 
 ![openAPI](/assets/openAPI-notification.jpg)
 
-then I created a Route in my backend app.py file and also a mock response
+then I created a Route in my backend app.py file and also a mock response data
 
 ![openAPI](/assets/notification-api.jpg)
 
@@ -75,7 +74,7 @@ then I created a Route in my backend app.py file and also a mock response
 
 
 ### React Page for Notifications
-implentend the notification feature on my app frontend
+I implemented the notification feature on my app frontend
 
 ![frontend](/assets/react-notif.png)
 
@@ -83,14 +82,14 @@ implentend the notification feature on my app frontend
 
 ### Run Postgres Container
 
-I wrote added command to create Postgres and DynamoDB local in my docker compose file
+I wrote added scripts to create Postgres and DynamoDB local in my docker compose file
 
 ![docker copose file](/assets/dynamo-dockercompose.jpg)
 
-I then write a script in my gitpod yaml file to install Postgres on Gitpod start up
+I then write a script in my gitpod yaml file to install Postgres in Gitpod on start up
 
 ![docker copose file](/assets/postgres-install.jpg)
 
-i installed a postgres extension, created containers from my docker compose file and connected to postgres container 
+I installed a postgres extension, created containers from my docker compose file and connected to postgres container 
 
 ![docker copose file](/assets/postgres-connected.jpg)
