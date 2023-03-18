@@ -28,19 +28,28 @@ Installed AWS X-ray sdk tool kit with
 `pip install aws-xray-sdk`
 
 imported X-ray middleware and recoreder in my App.py file
------xray-middleware-------
+![imported xray](/assets/xray-middleware.jpg)
 
 setting up an AWS X-ray resource in json format
--------xray json----------
+![xray json](/assets/xrayjson.png)
+
 
 created an xray group on AWS
--------xray group---------
--------xray group1-------
+![xray group](/assets/xray-group.jpg)
+![xray group](/assets/xray-group1.png)
+
 
 I created a sampling rule using the json file made earlier
-----sampling rule output---------
+![sampling output](/assets/samplingrule-output.jpg)
 
 added Deamon Service to Docker Compose file
-------xray deamon service------
+![deamon service](/assets/xray-daemon-container.jpg)
 
-composed up all my docker images
+run the docker compose up command and started all my containers
+,opened the frontend port and interract with it
+
+view traces on cloudwatch
+
+![cloud traces](/assets/aws-trace.png)
+![cloud traces](/assets/aws-trace1.png)
+![cloud traces](/assets/aws-trace2.png)
