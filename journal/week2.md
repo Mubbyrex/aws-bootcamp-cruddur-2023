@@ -53,3 +53,12 @@ view traces on cloudwatch
 ![cloud traces](/assets/aws-trace.png)
 ![cloud traces](/assets/aws-trace1.png)
 ![cloud traces](/assets/aws-trace2.png)
+
+### Install WatchTower and write a custom logger to send application log data to - CloudWatch Log group
+
+Installed watchtower by adding it to the requirement.txt file and running `pip install -r requirement.txt`
+
+Configure custom logger to send to CloudWatch Logs
+------configuring logs--------
+-------adding error function---------
+
