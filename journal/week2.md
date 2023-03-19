@@ -59,6 +59,12 @@ view traces on cloudwatch
 Installed watchtower by adding it to the requirement.txt file and running `pip install -r requirement.txt`
 
 Configure custom logger to send to CloudWatch Logs
-------configuring logs--------
--------adding error function---------
 
+![configure logs](/assets/configuring-logger.jpg)
+![adding error function](/assets/log-error-code.jpg)
+
+started up and interracted my crudder app.
+
+checked the cloudwatch logs in my AWS console
+![cloud watch log](/assets/cloudwatch.jpg)
+![cloud watch log](/assets/cloudwatch1.jpg)
