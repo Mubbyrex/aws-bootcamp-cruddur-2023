@@ -28,9 +28,11 @@ Installed AWS X-ray sdk tool kit with
 `pip install aws-xray-sdk`
 
 imported X-ray middleware and recoreder in my App.py file
+
 ![imported xray](/assets/xray-middleware.jpg)
 
 setting up an AWS X-ray resource in json format
+
 ![xray json](/assets/xrayjson.png)
 
 
@@ -40,9 +42,11 @@ created an xray group on AWS
 
 
 I created a sampling rule using the json file made earlier
+
 ![sampling output](/assets/samplingrule-output.jpg)
 
 added Deamon Service to Docker Compose file
+
 ![deamon service](/assets/xray-daemon-container.jpg)
 
 run the docker compose up command and started all my containers
@@ -66,5 +70,29 @@ Configure custom logger to send to CloudWatch Logs
 started up and interracted my crudder app.
 
 checked the cloudwatch logs in my AWS console
+
 ![cloud watch log](/assets/cloudwatch.jpg)
 ![cloud watch log](/assets/cloudwatch1.jpg)
+
+### Integrate Rollbar and capture and error
+
+installed rollbar and blinker through pip
+
+passed the Rollbar access token as environmental variable
+
+import and initialized Rollbar in App.py
+
+![import rollbar](/assets/import-rollbar.jpg)
+![rollbar init](/assets/rollbar-init.jpg)
+
+created a new endpoint to test rollbar
+
+![rollbar endpoint](/assets/rollbar-test.jpg)
+
+started my docker containers using the docker compose plug in
+
+run the error endpoint I created, and checked on the Rollbar UI for error items
+
+![rollbar error ui](/assets/rollbar-error-ui.jpg)
+![rollbar error ui](/assets/rollbar-error-ui1.jpg)
+![rollbar error ui](/assets/rollbar-error-ui2.jpg)
